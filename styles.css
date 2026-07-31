@@ -1,0 +1,54 @@
+body {  /*основной стиль*/
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #515076;
+}
+
+.title {  /*заголовок*/
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 78px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #515076;
+}
+
+.description {  /*описание*/
+    font-size: 12px;
+    line-height: 24px;
+    color: #A5A3B9;
+    margin-bottom: 8px;
+}
+
+.product-list {  /*список продуктов*/
+    list-style: circle;
+    padding: 20px;
+    margin: 20px;
+}
+
+.subtitle {  /*подзаголовок*/
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 12px;
+}
+
+.price-title {  /*заголовок цены*/
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.price-value { /*значение цены*/
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.product-card {  /*карточка продукта*/
+    width: 340px;
+    height: 573px;
+    background: #f7f7fa;
+    padding: 25px;
+    margin: 25px;
+}

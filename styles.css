@@ -1,54 +1,89 @@
-body {  /*основной стиль*/
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
-    color: #515076;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.title {  /*заголовок*/
+body { /*основной стиль*/
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 13px;
+    color: #515076;
+    background: url("images/project-background.png"); 
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+}
+  
+.title { /*заголовок*/
     font-size: 70px;
     font-weight: 400;
-    line-height: 78px;
-    margin-bottom: 40px;
+    margin-bottom: 110px;
+    margin-top: 220px;
     text-align: center;
-    color: #515076;
+    vertical-align: middle;
 }
 
-.description {  /*описание*/
+.description { /*описание*/
     font-size: 12px;
     line-height: 24px;
     color: #A5A3B9;
-    margin-bottom: 8px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
-.product-list {  /*список продуктов*/
-    list-style: circle;
-    padding: 20px;
-    margin: 20px;
+.product-card { /*карточка продукта в артикуле*/
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    background-color: #f7f7fa;
+    padding: 25px;
 }
 
-.subtitle {  /*подзаголовок*/
+.subtitle { /*подзаголовок*/
     font-size: 20px;
     line-height: 27px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
 }
 
-.price-title {  /*заголовок цены*/
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 700;
+.explanation { /*пояснение продукта*/
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 15px;
 }
 
-.price-value { /*значение цены*/
+.structure { /*заголовок состава*/
+    line-height: 18px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+
+}
+
+.product-list { /*список продуктов*/
+    list-style: circle;
+    list-style-position: inside;
+    line-height: 18px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.price-title { /*контейнер для заголовка и значения цены*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
     font-size: 20px;
     line-height: 24px;
     font-weight: 400;
 }
 
-.product-card {  /*карточка продукта*/
-    width: 340px;
-    height: 573px;
-    background: #f7f7fa;
-    padding: 25px;
-    margin: 25px;
+.cards { /*контейнер для карточек*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+    margin:0 auto;
+    max-width: 1110px;
 }

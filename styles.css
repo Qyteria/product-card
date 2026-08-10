@@ -89,3 +89,10 @@ body { /*основной стиль*/
     line-height: 24px;
     font-weight: 400;
 }
+
+#color-button {
+    background-color: red;
+}
+#color-button.green {
+    background-color: green;
+}

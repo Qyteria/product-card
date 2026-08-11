@@ -90,9 +90,9 @@ body { /*основной стиль*/
     font-weight: 400;
 }
 
-#color-button {
+.color-button {
     background-color: red;
 }
-#color-button.green {
+.color-button.green {
     background-color: green;
 }

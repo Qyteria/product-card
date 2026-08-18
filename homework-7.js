@@ -52,6 +52,6 @@ greetUser(`Daud`)
 
 // 7
 
-const productName = `moisturizing-mask`;
-let price =  2000;
+const productName = `moisturizingMask`;
+let price = 2000;
 const car = `bodyWork`;

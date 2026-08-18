@@ -7,6 +7,7 @@ const pinkHash = `#FFC0CB` // Розовый
 
 changeFirstColorCardButton.addEventListener(`click`, () => {
   productCard.style.backgroundColor = redHash;
+  
 })
 
 const productCards = document.querySelectorAll(`.product-card`);

@@ -4,28 +4,31 @@
     box-sizing: border-box;
 }
 
-body { /*основной стиль*/
+body {
+    /*основной стиль*/
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 13px;
     color: #515076;
-    background: url("images/project-background.png"); 
+    background: url("images/project-background.png");
     background-color: #FFFFFF;
     background-repeat: no-repeat;
     background-position: top center;
 }
-  
-.cards-catalog { /*контейнер для карточек*/
+
+.cards-catalog {
     padding-top: 220px;
 }
 
-.cards-catalog__title { /*заголовок*/
+.cards-catalog__title {
+    /*заголовок*/
     font-size: 70px;
     font-weight: 400;
     margin: 0 0 110px;
     text-align: center;
 }
 
-.cards-catalog__list { /*контейнер для карточек*/
+.cards-catalog__list {
+    /*контейнер для карточек*/
     display: flex;
     flex-wrap: wrap;
     gap: 45px;
@@ -34,7 +37,8 @@ body { /*основной стиль*/
     max-width: 1110px;
 }
 
-.product-card { /*карточка продукта в артикуле*/
+.product-card {
+    /*карточка продукта в артикуле*/
     display: flex;
     flex-direction: column;
     width: 340px;
@@ -42,11 +46,13 @@ body { /*основной стиль*/
     padding: 25px;
 }
 
-.product-card__images { /*картинка продукта*/
+.product-card__images {
+    /*картинка продукта*/
     margin: 0 0 30px;
 }
 
-.product-card__description { /*описание*/
+.product-card__description {
+    /*описание*/
     font-size: 12px;
     line-height: 24px;
     color: #A5A3B9;
@@ -54,25 +60,29 @@ body { /*основной стиль*/
     text-transform: uppercase;
 }
 
-.product-card__subtitle { /*подзаголовок*/
+.product-card__subtitle {
+    /*подзаголовок*/
     font-size: 20px;
     line-height: 27px;
     margin: 0 0 5px;
 }
 
-.product-card__explanation { /*пояснение продукта*/
+.product-card__explanation {
+    /*пояснение продукта*/
     font-size: 13px;
     line-height: 18px;
     margin: 0 0 15px;
 }
 
-.product-card__structure { /*состав*/
+.product-card__structure {
+    /*состав*/
     line-height: 18px;
     margin: 0 0 5px;
 
 }
 
-.product-card__list { /*список продуктов*/
+.product-card__list {
+    /*список продуктов*/
     list-style: circle;
     list-style-position: inside;
     line-height: 18px;
@@ -80,7 +90,8 @@ body { /*основной стиль*/
     margin: 0 0 25px;
 }
 
-.product-card__price { /*контейнер для заголовка и значения цены*/
+.product-card__price {
+    /*контейнер для заголовка и значения цены*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -93,6 +104,7 @@ body { /*основной стиль*/
 .color-button {
     background-color: red;
 }
+
 .color-button.green {
     background-color: green;
 }

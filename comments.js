@@ -1,5 +1,5 @@
-export const FirstComments = 
-  [
+  // Задание 5.
+  export const firstComments = [
     {
       postId: 1,
       id: 1,
@@ -64,59 +64,3 @@ export const FirstComments =
       body: "sapiente assumenda molestiae atque\nadipisci laborum distinctio aperiam et ab ut omnis\net occaecati aspernatur odit sit rem expedita\nquas enim ipsam minus"
     },
   ];
-
-const emailFragment = FirstComments.filter(comment => comment.email.includes(`.com`))
-console.log(emailFragment );
-
-const updatedComments = FirstComments.map(comment => {
-    let newPostId;
-    if (comment.id <= 5) {
-        newPostId = 2;
-    } else {
-        newPostId = 1;
-    }
-    
-    return {
-        ...comment,
-        postId: newPostId
-    };
-});
-console.log(updatedComments);
-
-const result = FirstComments.map(({ id, name, ...rest }) => ({ id, name }));
-console.log(result);
-
-
-const validatedComments = FirstComments.map(item => ({
-    ...item,
-    isInvalid: item.body.length > 180
-}));
-console.log(validatedComments);
-
-// const firstVersionMethod = FirstComments.map(user => user.email);
-// console.log(firstVersionMethod);
-
-const secondVersionMethod = FirstComments.reduce((acc, user) => {
-    acc.push(user.email);
-    return acc;
-}, []);
-console.log(secondVersionMethod);
-
-const emailList = [
-  'Eliseo@gardner.biz',
-  'Jayne_Kuhic@sydney.com',
-  'Nikita@garfield.biz',
-  'Lew@alysha.tv',
-  'Hayden@althea.biz',
-  'Presley.Mueller@myrl.com',
-  'Dallas@ole.me',
-  'Mallory_Kunze@marie.org',
-  'Meghan_Littel@rene.us'
-]
-
-
-const firstEmailList = emailList.toString();
-console.log(firstEmailList);
-
-const secondEmailList = emailList.join(', ');
-console.log(secondEmailList);
